@@ -134,6 +134,19 @@ footer ul li{
   padding-top: 4px;
 }
 
+footer ul li a{
+  color: #656565;
+  text-decoration: none!important;
+}
+
+footer ul li a:link {
+  text-decoration: none!important;
+}
+
+footer ul li a:visited {
+  background-color: none;
+}
+
 footer ul li:hover {
   text-decoration: underline;
   color: #424242 !important;
