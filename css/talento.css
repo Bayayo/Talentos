@@ -197,6 +197,7 @@ footer ul li:hover {
 /*    SECCIONES         */
 /*──────────────────────*/
 
+
 .seccion_carrusel{
   width: 100%;
   background-color: #FFF;
@@ -221,6 +222,14 @@ footer ul li:hover {
   justify-content: center;
   flex-direction: row;
   padding: 0 6%;
+}
+
+.colg {
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0 10%;
 }
 
 .maxww{
@@ -400,6 +409,28 @@ footer ul li:hover {
   animation: showinfo 0.3s ease-in forwards;
 }
 
+.sec-linea{
+  height: 5px;
+  background-color: black;
+  margin: 1% 10%;
+}
+
+.elem-g{
+  display: inline-block;
+  width: 100%;
+}
+
+.alinea-d div{
+  justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: row;
+    text-align: initial;
+}
+
+.w20{
+  width: 20%;
+}
+
 /* ==========================================================================
    COLORS
    ========================================================================== */
@@ -553,6 +584,207 @@ footer ul li:hover {
 .mt-100{
   margin-top: 100px;
 }
+
+/* ==========================================================================
+   FORMAS
+   ========================================================================== */
+
+#fancy-inputs {
+  float: left;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+#fancy-inputs label.input {
+  float: left;
+  width: 90%;
+  height: 35px;
+  margin: 25px 0 0 0;
+  position: relative;
+  clear: both;
+}
+#fancy-inputs label.input span {
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  left: 0;
+  cursor: text;
+}
+#fancy-inputs label.input span span {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  font-size: 22px;
+  text-indent: 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+#fancy-inputs label.input span:before {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: #2c3e50;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+#fancy-inputs label.input span:after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: #2c3e50;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+#fancy-inputs input {
+  float: left;
+  width: 90%;
+  height: 40px;
+  padding: 0 10px;
+  border: 0;
+  border-bottom: 3px solid #c0c8d0;
+  background-color: transparent;
+  position: relative;
+  z-index: 99;
+}
+#fancy-inputs input:focus {
+  outline: 0;
+}
+#fancy-inputs input.white {
+  background-color: #e74c3c;
+}
+#fancy-inputs input:focus + span span {
+  cursor: initial;
+  position: absolute;
+  top: -35px;
+  color: #2c3e50;
+}
+#fancy-inputs input:focus + span:before {
+  width: 50%;
+}
+#fancy-inputs input:focus + span:after {
+  width: 50%;
+}
+#fancy-inputs span.fixed span {
+  top: -35px;
+}
+
+.btn {
+  width: 100%;
+    height: 22px;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+.btn:hover {
+  background-color: #374b60;
+}
+
+.radio_group {
+  position: relative;
+  padding: 0;
+}
+.radio_group input[type="radio"] {
+  display: none;
+}
+.radio_group input[type="radio"] + label span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+  clear: both;
+  padding-left: 1.8em;
+}
+.radio_group input[type="radio"] + label span:before {
+  position: absolute;
+  content: "";
+  border: 6px solid #c0c8d0;
+  background: #c0c8d0;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  left: 0;
+  margin-top: -2px;
+}
+
+.radio_group input[type="radio"]:checked + label span:before {
+  border: 6px solid #22bec6;
+  background: #fefffa;
+}
+
+.check_box_group {
+  position: relative;
+  padding: 0;
+}
+.check_box_group input[type="checkbox"] {
+  display: none;
+}
+.check_box_group input[type="checkbox"] + label span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-bottom: 0.75em;
+  line-height: 1.2;
+  clear: both;
+  padding-left: 1.8em;
+}
+.check_box_group input[type="checkbox"] + label span:before {
+  position: absolute;
+  content: " ";
+  border: 3px solid #c0c8d0;
+  background: #c0c8d0;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  margin-top: -2px;
+}
+.check_box_group input[type="checkbox"] + label span:after {
+  position: absolute;
+  content: " ";
+  width: 16px;
+  height: 16px;
+  left: 0;
+  margin-top: -2px;
+}
+.check_box_group input[type="checkbox"]:checked + label span:before {
+  content: "︎︎ ";
+  color: #22bec6;
+  background: #22bec6;
+  text-align: center;
+  border: 3px solid #22bec6;
+}
+.check_box_group input[type="checkbox"]:checked + label span:after {
+  margin-top: 2px;
+  left: 8px;
+  width: 3px;
+  height: 8px;
+  transform: rotate(45deg);
+  border: solid #fefffa;
+  border-width: 0 2px 2px 0;
+}
+
 
 /* ==========================================================================
    ANIMACIONES
